@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+
+  padding-block: 12px;
+
+  @include action-small;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  padding-block: 8px;
+  padding-inline: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__item {
+    padding-block: 12px;
+    padding-inline: 20px;
+
+    color: var(--color-dark);
+
+    border-radius: 12px;
+
+    transition-property: color, background-color;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: var(--color-primary);
+
+      background-color: var(--color-primary-10);
+
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

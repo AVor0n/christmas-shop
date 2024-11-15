@@ -7,3 +7,22 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: var(--color-dark);
+
+  background-color: var(--color-static-white);
+}
+
+.wrapper {
+  inline-size: 1276px;
+  margin-inline: auto;
+}
