@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "element-name": [
+      "error",
+      {
+        "whitelist": ["include"]
+      }
+    ]
+  }
+}

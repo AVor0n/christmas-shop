@@ -1,0 +1,16 @@
+{
+  "*.js": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.html": [
+    "html-validate"
+  ],
+  "*.scss": [
+    "stylelint --fix",
+    "prettier --write"
+  ],
+  "!(*.{html,js,scss})": [
+    "prettier --write --ignore-unknown"
+  ]
+}

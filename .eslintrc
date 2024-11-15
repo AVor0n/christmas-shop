@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:regexp/all",
+    "plugin:import/recommended",
+    "plugin:promise/recommended",
+    "eslint-config-prettier"
+  ],
+  "plugins": ["promise", "regexp", "import"],
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "regexUFlag": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-restricted-syntax": "off", // airbnb запрещает for..of
+    "no-param-reassign": "warn",
+    "no-console": "error",
+    "regexp/require-unicode-sets-regexp": "off", // ещё не поддерживается
+    "regexp/no-obscure-range": "off", // ругается на а-я, как на неочевидный диапазон
+    "promise/always-return": ["error", { "ignoreLastCallback": true }],
+    "promise/catch-or-return": ["error", { "allowFinally": true }],
+    "import/prefer-default-export": "off",
+    "import/no-duplicates": ["error", { "prefer-inline": true }],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
