@@ -1,0 +1,47 @@
+.about {
+  padding-block: 60px;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  color: var(--color-dark);
+
+  border-radius: 20px;
+
+  background-color: var(--color-static-white);
+
+  &__title {
+    color: var(--color-primary);
+
+    @include caption;
+  }
+
+  &__header {
+    @include header-2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-inline-size: 480px;
+    padding-block: 100px;
+    padding-inline-start: 60px;
+
+    @include paragraph;
+  }
+
+  &__image {
+    border-radius: 20px;
+  }
+}
