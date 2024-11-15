@@ -1,0 +1,86 @@
+@mixin header-1 {
+  font-weight: 600;
+  font-size: 32px;
+  font-family: Montserrat, sans-serif;
+  line-height: 150%;
+  letter-spacing: 18%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin header-2 {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: 16%;
+  font-optical-sizing: auto;
+}
+
+@mixin header-3 {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin header-4 {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  line-height: 148%;
+  letter-spacing: 0%;
+  font-optical-sizing: auto;
+}
+
+@mixin action-large {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: 16%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin action-small {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin caption {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Allura, cursive;
+  line-height: 100%;
+  letter-spacing: 5%;
+  font-optical-sizing: auto;
+}
+
+@mixin slider-text {
+  font-weight: 600;
+  font-size: 80px;
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
