@@ -22,7 +22,7 @@ body {
   background-color: var(--color-static-white);
 }
 
-.wrapper {
-  inline-size: 1276px;
+.content-wrapper {
+  max-inline-size: 1276px;
   margin-inline: auto;
 }

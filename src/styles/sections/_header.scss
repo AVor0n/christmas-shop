@@ -1,11 +1,13 @@
 .header {
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
+  &__content {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
 
-  padding-block: 12px;
+    padding-block: 12px;
 
-  @include action-small;
+    @include action-small;
+  }
 }
 
 .logo {
