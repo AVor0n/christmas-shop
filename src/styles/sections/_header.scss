@@ -21,6 +21,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  &__text {
+    color: var(--color-dark);
+  }
 }
 
 .nav {
