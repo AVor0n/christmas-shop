@@ -1,0 +1,52 @@
+.hero {
+  padding-block: 60px;
+
+  border-radius: 20px 20px 0 0;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png'), url('../assets/img/general/bg-ball.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  padding-block: 60px;
+
+  color: var(--color-static-white);
+
+  background-size: cover;
+
+  @include caption;
+
+  &__header {
+    max-inline-size: 450px;
+
+    text-align: center;
+
+    @include header-1;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    inline-size: fit-content;
+    padding-block: 20px;
+    padding-inline: 32px;
+
+    color: var(--color-static-white);
+
+    border-radius: 20px;
+
+    background-color: var(--color-dark);
+
+    @include action-small;
+  }
+}
