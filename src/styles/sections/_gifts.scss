@@ -1,0 +1,86 @@
+.gifts {
+  padding-block: 60px;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  color: var(--color-static-white);
+
+  &__start {
+    @include caption;
+  }
+
+  &__end {
+    @include header-2;
+  }
+}
+
+.gift-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 20px;
+
+  background-color: var(--color-content-background);
+
+  &__category {
+    @include header-4;
+
+    &_work {
+      color: var(--color-tag-purple);
+    }
+
+    &_health {
+      color: var(--color-tag-green);
+    }
+
+    &_harmony {
+      color: var(--color-tag-pink);
+    }
+  }
+
+  &__title {
+    @include header-3;
+  }
+
+  &__image {
+    block-size: 230px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    min-block-size: 112px;
+    padding: 20px;
+
+    color: var(--color-dark);
+
+    border-radius: 20px;
+
+    background-color: var(--color-static-white);
+  }
+}
