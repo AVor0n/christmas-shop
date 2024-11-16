@@ -1,0 +1,85 @@
+.slider {
+  padding-block: 60px;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    color: var(--color-static-white);
+
+    @include slider-text;
+  }
+
+  &__image {
+    inline-size: 200px;
+    block-size: 200px;
+
+    border-radius: 20px;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+  }
+
+  &__button {
+    inline-size: 56px;
+    block-size: 56px;
+
+    border: 1px solid var(--color-static-white);
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &:disabled {
+      border: 1px solid var(--color-static-white-40);
+
+      cursor: initial;
+
+      path {
+        stroke: var(--color-static-white-40);
+      }
+    }
+
+    path {
+      stroke: var(--color-static-white);
+    }
+
+    &_prev {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  color: var(--color-static-white);
+
+  &__start {
+    @include caption;
+  }
+
+  &__end {
+    @include header-2;
+  }
+}
