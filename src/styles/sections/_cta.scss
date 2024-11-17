@@ -1,0 +1,93 @@
+.cta {
+  padding-block: 60px;
+
+  color: var(--color-static-white);
+
+  border-radius: 0 0 20px 20px;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png'), url('../assets/img/general/bg-forest.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, cover;
+
+  &__title {
+    text-align: center;
+
+    @include header-2;
+  }
+
+  &__text {
+    @include caption;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    padding-block: 120px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    inline-size: fit-content;
+    padding-block: 20px;
+    padding-inline: 32px;
+
+    color: var(--color-static-white);
+
+    border-radius: 20px;
+
+    background-color: var(--color-dark);
+
+    @include action-small;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+  align-items: center;
+
+  padding-block: 8px;
+  padding-inline: 12px;
+
+  border-radius: 20px;
+
+  background-color: var(--color-static-white-40);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-inline-size: 80px;
+  }
+
+  &__item-value {
+    @include header-2;
+  }
+
+  &__item-label {
+    @include header-4;
+  }
+
+  &__separator {
+    inline-size: 1px;
+    block-size: 20px;
+
+    background-color: var(--color-static-white-40);
+  }
+}
