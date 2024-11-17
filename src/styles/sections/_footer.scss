@@ -1,0 +1,83 @@
+.footer {
+  &__contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 12px;
+
+    path {
+      stroke: var(--color-dark);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__copyright {
+    @include paragraph;
+  }
+
+  &__author {
+    color: initial;
+
+    cursor: pointer;
+
+    @include caption;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.social {
+  &__link {
+    padding: 8px;
+
+    color: initial;
+
+    &:hover {
+      path {
+        stroke: var(--color-primary);
+      }
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  padding-block: 60px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background-color: var(--color-content-background);
+
+  &__value {
+    @include action-large;
+  }
+
+  &__label {
+    @include header-3;
+  }
+}
