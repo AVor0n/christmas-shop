@@ -17,6 +17,7 @@ module.exports = {
     'order/properties-order': propertyOrdering,
     'no-descending-specificity': null,
     'custom-property-empty-line-before': null,
+    'selector-class-pattern': null,
   },
   defaultSeverity: 'error',
   ignoreFiles: ['!src/**/*.scss'],

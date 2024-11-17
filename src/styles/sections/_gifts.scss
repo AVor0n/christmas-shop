@@ -45,6 +45,14 @@
 
   background-color: var(--color-content-background);
 
+  &:hover {
+    cursor: pointer;
+
+    .gift-card__content {
+      color: var(--color-primary);
+    }
+  }
+
   &__category {
     @include header-4;
 
@@ -82,5 +90,7 @@
     border-radius: 20px;
 
     background-color: var(--color-static-white);
+
+    transition: color 0.2s linear;
   }
 }
