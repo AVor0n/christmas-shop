@@ -48,7 +48,8 @@
     transition-timing-function: linear;
     transition-duration: 0.3s;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: var(--color-primary);
 
       background-color: var(--color-primary-10);
