@@ -24,6 +24,8 @@
 
   &__text {
     color: var(--color-dark);
+
+    @include action-small;
   }
 }
 
