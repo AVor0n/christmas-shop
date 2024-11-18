@@ -75,6 +75,10 @@
 
   background-color: var(--color-content-background);
 
+  &:hover {
+    color: var(--color-primary);
+  }
+
   &__value {
     @include action-large;
   }

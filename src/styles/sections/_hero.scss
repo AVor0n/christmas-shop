@@ -50,5 +50,11 @@
     background-color: var(--color-dark);
 
     @include action-small;
+
+    &:hover {
+      color: var(--color-dark);
+
+      background-color: var(--color-static-white);
+    }
   }
 }
