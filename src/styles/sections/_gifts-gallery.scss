@@ -1,0 +1,75 @@
+.gifts-gallery {
+  padding-block: 60px;
+
+  border-radius: 20px;
+
+  background-color: var(--color-primary);
+  background-image: url('../assets/img/general/bg-snow.png'), url('../assets/img/general/bg-garland.png');
+  background-repeat: no-repeat;
+  background-position: center, top;
+  background-size: cover, contain;
+
+  &__header {
+    color: var(--color-static-white);
+    text-align: center;
+
+    @include header-1;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  color: var(--color-static-white);
+
+  &__start {
+    @include caption;
+  }
+
+  &__end {
+    @include header-2;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  &__tab {
+    padding-block: 12px;
+    padding-inline: 20px;
+
+    color: var(--color-static-white);
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    @include action-small;
+
+    &_active,
+    &:hover {
+      background-color: var(--color-static-white-40);
+    }
+  }
+}
