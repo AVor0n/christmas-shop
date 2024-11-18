@@ -73,5 +73,9 @@
     &:hover {
       background-color: var(--color-static-white-40);
     }
+
+    &_active {
+      cursor: initial;
+    }
   }
 }
