@@ -33,15 +33,43 @@
   }
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+
+  inline-size: 40px;
+  block-size: 40px;
+
+  &__line {
+    inline-size: 20px;
+    block-size: 1px;
+
+    border-radius: 1px;
+
+    background-color: var(--color-dark);
+  }
+}
+
 .nav {
-  @include tablet() {
+  &__burger {
     display: none;
+
+    @include tablet() {
+      display: block;
+    }
   }
 
   &__list {
     display: flex;
     gap: 8px;
     align-items: center;
+
+    @include tablet() {
+      display: none;
+    }
   }
 
   &__item {
