@@ -9,7 +9,7 @@
     "dev:serve": "parcel ./src/pages/index.html --port 3000 --open",
     "dev:watch": "parcel watch ./src/pages/index.html",
     "dev": "concurrently 'pnpm:dev:*' --prefix-colors=yellow,cyan --restart-tries=-1",
-    "build": "rm -rf dist && parcel build ./src/pages/index.html --public-url 'https://rolling-scopes-school.github.io/avor0n-JSFE2024Q4/christmas-shop'",
+    "build": "rm -rf dist .parcel-cache && parcel build ./src/pages/index.html --public-url 'https://rolling-scopes-school.github.io/avor0n-JSFE2024Q4/christmas-shop'",
     "build:dev": "pnpm build --no-optimize",
     "format": "prettier . --write --ignore-unknown",
     "lint:html": "html-validate src/**/*.html",
