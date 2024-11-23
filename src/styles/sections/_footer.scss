@@ -4,6 +4,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     align-items: center;
+
+    @include tablet() {
+      display: flex;
+      flex-direction: column;
+
+      margin-inline: 8px;
+    }
   }
 
   &__socials {
@@ -74,6 +81,10 @@
   border-radius: 20px;
 
   background-color: var(--color-content-background);
+
+  @include tablet() {
+    inline-size: 100%;
+  }
 
   &:hover {
     color: var(--color-primary);

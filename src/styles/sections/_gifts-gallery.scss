@@ -16,6 +16,10 @@
     text-align: center;
 
     @include header-1;
+
+    @include mobile() {
+      padding-inline: 8px;
+    }
   }
 
   &__content {
@@ -29,6 +33,15 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+
+    @include tablet() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet() {
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+    }
   }
 }
 
@@ -54,6 +67,12 @@
   flex-direction: row;
   gap: 8px;
 
+  padding-inline: 8px;
+
+  @include mobile() {
+    gap: 0;
+  }
+
   &__tab {
     padding-block: 12px;
     padding-inline: 20px;
@@ -66,6 +85,10 @@
     background-color: transparent;
 
     cursor: pointer;
+
+    @include mobile() {
+      padding-inline: 8px;
+    }
 
     @include action-small;
 

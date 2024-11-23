@@ -18,6 +18,7 @@ module.exports = {
     'no-descending-specificity': null,
     'custom-property-empty-line-before': null,
     'selector-class-pattern': null,
+    'scss/at-mixin-argumentless-call-parentheses': null,
   },
   defaultSeverity: 'error',
   ignoreFiles: ['!src/**/*.scss'],

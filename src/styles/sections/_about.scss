@@ -21,6 +21,13 @@
 
   background-color: var(--color-static-white);
 
+  @include mobile() {
+    display: flex;
+    flex-direction: column;
+
+    margin-inline: 8px;
+  }
+
   &__title {
     color: var(--color-primary);
 
@@ -41,9 +48,27 @@
     padding-inline-start: 60px;
 
     @include paragraph;
+
+    @include tablet() {
+      padding-block: 48px;
+      padding-inline-end: 60px;
+    }
+
+    @include mobile() {
+      padding-block: 60px;
+      padding-inline: 20px;
+    }
   }
 
   &__image {
+    inline-size: 100%;
+    block-size: 528px;
+
     border-radius: 20px;
+
+    background-image: url('../assets/img/general/santa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }

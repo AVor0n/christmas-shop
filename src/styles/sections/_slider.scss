@@ -25,6 +25,10 @@
     color: var(--color-static-white);
 
     @include slider-text;
+
+    @include tablet() {
+      padding-inline: 8px;
+    }
   }
 
   &__image {
@@ -38,6 +42,12 @@
     display: flex;
     gap: 8px;
     justify-content: end;
+
+    @include tablet() {
+      gap: 20px;
+
+      padding-inline: 8px;
+    }
   }
 
   &__button {
