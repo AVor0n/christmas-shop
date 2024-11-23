@@ -9,6 +9,8 @@
   background-position: center;
   background-size: cover;
 
+  overflow-x: hidden;
+
   &__content {
     display: flex;
     flex-direction: column;
