@@ -53,8 +53,12 @@
       color: var(--color-primary);
 
       background-color: var(--color-primary-10);
+    }
 
-      cursor: pointer;
+    &.active {
+      .nav__link {
+        cursor: default;
+      }
     }
   }
 
