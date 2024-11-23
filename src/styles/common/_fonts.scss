@@ -1,0 +1,96 @@
+@mixin header-1 {
+  --font-size: 32px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 150%;
+  letter-spacing: calc(0.18 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin header-2 {
+  --font-size: 24px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: calc(0.16 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin header-3 {
+  --font-size: 16px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: calc(0.08 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin header-4 {
+  --font-size: 12px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 130%;
+  letter-spacing: 5%;
+  letter-spacing: calc(0.05 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  line-height: 148%;
+  letter-spacing: 0;
+  font-optical-sizing: auto;
+}
+
+@mixin action-large {
+  --font-size: 24px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 152%;
+  letter-spacing: calc(0.16 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin action-small {
+  --font-size: 12px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: 130%;
+  letter-spacing: calc(0.05 * var(--font-size));
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
+
+@mixin caption {
+  --font-size: 24px;
+  font-weight: 400;
+  font-size: var(--font-size);
+  font-family: Allura, cursive;
+  line-height: 100%;
+  letter-spacing: calc(0.05 * var(--font-size));
+  font-optical-sizing: auto;
+}
+
+@mixin slider-text {
+  --font-size: 80px;
+  font-weight: 600;
+  font-size: var(--font-size);
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-optical-sizing: auto;
+}
