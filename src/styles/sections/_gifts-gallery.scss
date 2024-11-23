@@ -6,10 +6,10 @@
   border-radius: 20px;
 
   background-color: var(--color-primary);
-  background-image: url('../assets/img/general/bg-snow.png'), url('../assets/img/general/bg-garland.png');
+  background-image: url('../assets/img/general/bg-garland.png');
   background-repeat: no-repeat;
-  background-position: center, top;
-  background-size: cover, contain;
+  background-position: top;
+  background-size: contain;
 
   &__header {
     color: var(--color-static-white);
