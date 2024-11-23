@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+    place-items: center;
 
     @include tablet() {
       grid-template-columns: repeat(2, 1fr);
