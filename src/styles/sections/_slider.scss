@@ -18,11 +18,15 @@
   }
 
   &__container {
+    position: relative;
+
     display: flex;
     gap: 20px;
     align-items: center;
 
     color: var(--color-static-white);
+
+    transition: inset-inline-start 0.5s ease-out;
 
     @include slider-text;
 
