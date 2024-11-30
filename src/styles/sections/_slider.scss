@@ -61,11 +61,13 @@
 
     cursor: pointer;
 
-    &:hover:not(:disabled) {
-      background-color: var(--color-static-white);
+    @include hover() {
+      &:hover:not(:disabled) {
+        background-color: var(--color-static-white);
 
-      path {
-        stroke: var(--color-primary);
+        path {
+          stroke: var(--color-primary);
+        }
       }
     }
 

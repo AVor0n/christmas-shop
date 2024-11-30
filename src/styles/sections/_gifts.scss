@@ -62,11 +62,13 @@
 
   background-color: var(--color-content-background);
 
-  &:hover {
-    cursor: pointer;
+  @include hover() {
+    &:hover {
+      cursor: pointer;
 
-    .gift-card__content {
-      color: var(--color-primary);
+      .gift-card__content {
+        color: var(--color-primary);
+      }
     }
   }
 

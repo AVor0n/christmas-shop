@@ -40,8 +40,10 @@
 
     @include caption;
 
-    &:hover {
-      color: var(--color-primary);
+    @include hover() {
+      &:hover {
+        color: var(--color-primary);
+      }
     }
   }
 }
@@ -52,9 +54,11 @@
 
     color: initial;
 
-    &:hover {
-      path {
-        stroke: var(--color-primary);
+    @include hover() {
+      &:hover {
+        path {
+          stroke: var(--color-primary);
+        }
       }
     }
   }
@@ -86,8 +90,10 @@
     inline-size: 100%;
   }
 
-  &:hover {
-    color: var(--color-primary);
+  @include hover() {
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 
   &__value {

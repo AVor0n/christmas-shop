@@ -49,10 +49,12 @@
 
     @include action-small;
 
-    &:hover {
-      color: var(--color-dark);
+    @include hover() {
+      &:hover {
+        color: var(--color-dark);
 
-      background-color: var(--color-static-white);
+        background-color: var(--color-static-white);
+      }
     }
   }
 

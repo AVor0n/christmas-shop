@@ -92,9 +92,11 @@
 
     @include action-small;
 
-    &_active,
-    &:hover {
-      background-color: var(--color-static-white-40);
+    @include hover() {
+      &_active,
+      &:hover {
+        background-color: var(--color-static-white-40);
+      }
     }
 
     &_active {

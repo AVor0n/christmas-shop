@@ -22,8 +22,10 @@
   padding-block: 8px;
   padding-inline: 20px;
 
-  &:hover {
-    cursor: pointer;
+  @include hover() {
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__text {
@@ -84,11 +86,13 @@
     transition-timing-function: linear;
     transition-duration: 0.3s;
 
-    &:hover,
-    &.active {
-      color: var(--color-primary);
+    @include hover() {
+      &:hover,
+      &.active {
+        color: var(--color-primary);
 
-      background-color: var(--color-primary-10);
+        background-color: var(--color-primary-10);
+      }
     }
 
     &.active {
