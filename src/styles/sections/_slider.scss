@@ -19,6 +19,7 @@
 
   &__container {
     position: relative;
+    inset-inline-start: 0;
 
     display: flex;
     gap: 20px;
@@ -31,7 +32,7 @@
     @include slider-text;
 
     @include tablet() {
-      padding-inline: 8px;
+      margin-inline: 8px;
     }
   }
 
