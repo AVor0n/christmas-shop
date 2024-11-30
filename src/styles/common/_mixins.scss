@@ -5,7 +5,7 @@
 }
 
 @mixin mobile() {
-  @media (width <= 767px) {
+  @media (width <= 768px) {
     @content;
   }
 }
