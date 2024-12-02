@@ -70,7 +70,29 @@
     align-items: center;
 
     @include mobile() {
-      display: none;
+      position: absolute;
+      inset: 0;
+      inset-block-start: 64px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+
+      inline-size: 100%;
+
+      background-color: var(--color-static-white);
+
+      opacity: 0;
+
+      transition: opacity 0.2s ease-in-out;
+
+      @include action-large;
+    }
+
+    &.active {
+      opacity: 1;
     }
   }
 
