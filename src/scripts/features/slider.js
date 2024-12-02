@@ -16,7 +16,8 @@ function setSliderStep(step) {
 }
 
 function getSliderStepOffset() {
-  return ($slider.scrollWidth - $slider.clientWidth) / countSteps;
+  const sliderFullWidth = 1989; // $slider.scrollWidth;
+  return (sliderFullWidth - $slider.clientWidth) / countSteps;
 }
 
 function updateBtnState(step) {
