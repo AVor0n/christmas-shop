@@ -1,19 +1,7 @@
-const createElement = (tag, options) => Object.assign(document.createElement(tag), options);
+import { categories } from '../data/categories';
+import { showModal } from './giftModal';
 
-const categoryProps = {
-  work: {
-    name: 'for work',
-    img: './img/gifts/gift-for-work.png',
-  },
-  health: {
-    name: 'for health',
-    img: './img/gifts/gift-for-health.png',
-  },
-  harmony: {
-    name: 'for harmony',
-    img: './img/gifts/gift-for-harmony.png',
-  },
-};
+const createElement = (tag, options) => Object.assign(document.createElement(tag), options);
 
 export const createGiftCard = cardData => {
   const $container = createElement('div', {
@@ -22,7 +10,7 @@ export const createGiftCard = cardData => {
 
   const $image = createElement('img', {
     className: 'gift-card__image',
-    src: categoryProps[cardData.category].img,
+    src: categories[cardData.category].img,
   });
 
   const $content = createElement('div', {
@@ -36,11 +24,14 @@ export const createGiftCard = cardData => {
 
   const $description = createElement('span', {
     className: `gift-card__category gift-card__category_${cardData.category}`,
-    textContent: categoryProps[cardData.category].name,
+    textContent: categories[cardData.category].name,
   });
 
   $content.append($title, $description);
   $container.append($image, $content);
+  $container.addEventListener('click', () => {
+    showModal(cardData);
+  });
 
   return $container;
 };

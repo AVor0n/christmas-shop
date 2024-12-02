@@ -1,0 +1,110 @@
+.gift-info {
+  margin: auto;
+
+  border: none;
+  border-radius: 20px;
+
+  &::backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    inline-size: 100%;
+    block-size: 100vh;
+
+    background-color: var(--color-overlay);
+  }
+
+  &__card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    inline-size: 400px;
+
+    border-radius: 20px;
+
+    background-color: var(--color-content-background);
+  }
+
+  &__image {
+    block-size: 230px;
+
+    border-radius: 20px 20px 0 0;
+
+    object-fit: contain;
+  }
+
+  &__close {
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-end: 12px;
+
+    inline-size: 40px;
+    block-size: 40px;
+
+    border: none;
+
+    background-color: transparent;
+    background-image: url('../assets/svg/cross.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background-color: var(--color-static-white);
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__stats-header {
+    @include header-4;
+  }
+
+  &__stat {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+
+    @include paragraph;
+  }
+
+  &__description {
+    @include paragraph;
+  }
+
+  &__stat-indicators {
+    display: flex;
+    align-items: center;
+  }
+
+  &__stat-indicator {
+    path {
+      fill: var(--color-primary-10);
+    }
+  }
+
+  &__stat-indicator_fill {
+    path {
+      fill: var(--color-primary);
+    }
+  }
+}
