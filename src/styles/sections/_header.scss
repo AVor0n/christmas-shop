@@ -52,6 +52,20 @@
     border-radius: 1px;
 
     background-color: var(--color-dark);
+
+    transform-origin: center;
+
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &.active {
+    .burger__line {
+      transform: translateY(4px) rotate(45deg);
+    }
+
+    .burger__line:nth-child(2) {
+      transform: translateY(-4px) rotate(-45deg);
+    }
   }
 }
 
